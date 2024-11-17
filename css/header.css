@@ -1,0 +1,49 @@
+header div {
+  overflow: hidden;
+}
+
+.h1-header {
+  font-size: 3.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.img-header {
+  height: 180px;
+  max-width: 220px;
+  object-fit: contain;
+  transform: scale(60%);
+}
+
+.line-header {
+  height: 1px;
+  width: 100vw;
+  margin: 0.3rem;
+  background-color: var(--gray);
+}
+
+#desktop-nav .gap-3 {
+  margin-bottom: 7px;
+}
+
+.cat-left {
+  padding-right: 1.2rem;
+}
+
+@media only screen and (min-width: 601px) {
+  .desktop-left,
+  .desktop-mid,
+  .desktop-right {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    flex-basis: 33%;
+  }
+
+  .desktop-mid {
+    width: 70rem;
+  }
+
+  .desktop-left {
+    justify-content: end;
+  }
+}

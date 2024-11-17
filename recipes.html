@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Cat Bakery - Recipes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="f-jc-center">
+      <div class="f-fd-col f-ai-center">
+        <div class="f-fd-row">
+          <div class="desktop-left">
+            <img
+              class="img-header cat-left"
+              src="resources/images/cat1.png"
+              alt="cozy cat image"
+            />
+          </div>
+          <div class="font-center f-fd-col f-jc-center desktop-mid">
+            <a class="active" href="#"
+              ><h1 class="h1-header">Cozy Cat Bakery</h1></a
+            >
+            <p class="p-it">purrrfect recipes for your sweet tooth cravings</p>
+          </div>
+          <div class="desktop-right">
+            <img
+              class="img-header"
+              src="resources/images/cat2.png"
+              alt="cozy cat image"
+            />
+          </div>
+        </div>
+        <nav>
+          <div id="desktop-nav" class="hidden-on-mobile">
+            <div class="line-header"></div>
+            <div class="f-jc-center f-ai-center gap-3">
+              <a href="index.html">home</a>
+              <a class="active" href="#">recipes</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+            </div>
+            <div class="line-header"></div>
+          </div>
+          <div id="mobile-nav" class="hidden-on-desktop">
+            <div>
+              <a href="index.html">home</a>
+              <a class="active" href="#">recipes</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="recipe-container" class="f-fd-col f-ai-center">
+        <div id="loading-circle" class="loader"></div>
+        <div id="recipe-grid"></div>
+      </div>
+    </main>
+    <footer class="f-ai-center">
+      <div class="f-fd-row f-jc-center container gap-10">
+        <div class="f-fd-col gap-1">
+          <h5>explore</h5>
+          <div class="f-fd-col gap-1">
+            <a class="active" href="#">home</a>
+            <a href="recipes.html">recipes</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+          </div>
+        </div>
+        <div class="f-fd-col gap-1">
+          <h5>recipes</h5>
+          <div class="f-fd-col gap-1">
+            <a href="muffins.html">cupcakes</a>
+            <a href="donuts.html">brownies</a>
+            <a href="cookies.html">cookies</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="marg-bot-1">stay updated</h5>
+          <div class="input-subscribe-container">
+            <p>Receive new posts and updates via email</p>
+            <div class="f-fd-col gap-1">
+              <input type="text" placeholder="enter your email" />
+              <input type="submit" value="SUBSCRIBE" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5 class="marg-bot-1">socials</h5>
+          <div class="f-fd-row">
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-tiktok.svg"
+              alt="tiktok icon"
+            />
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-instagram.svg"
+              alt="instagram icon"
+            />
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-youtube.svg"
+              alt="youtube icon"
+            />
+
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-pinterest.svg"
+              alt="pinterest icon"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/recipes.js"></script>
+  </body>
+</html>

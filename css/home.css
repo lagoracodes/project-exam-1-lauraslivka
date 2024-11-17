@@ -1,0 +1,53 @@
+.rectangle-1 {
+  width: 35rem;
+  height: 20rem;
+  background-color: lightgray;
+}
+
+.btn-arrow {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+  background-color: lightgray;
+}
+
+.rectangle-2 {
+  width: 15rem;
+  height: 15rem;
+  background-color: lightgray;
+}
+
+#carousel-title {
+  margin-right: 21.2rem;
+}
+
+#newest-posts {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding-bottom: 7rem;
+}
+
+#newest-posts-titles {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#customer-reviews {
+  height: 20rem;
+  width: auto;
+  background-color: lightgray;
+}
+
+.customer-reviews-rectangle {
+  width: 18rem;
+  height: 12rem;
+  background-color: var(--bg);
+}
+
+.featured-on-rectangle {
+  width: 10rem;
+  height: 5rem;
+  background-color: lightgray;
+  border-radius: 50px;
+}

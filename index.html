@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Cat Bakery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="f-jc-center">
+      <div class="f-fd-col f-ai-center">
+        <div class="f-fd-row">
+          <div class="desktop-left">
+            <img
+              class="img-header cat-left"
+              src="resources/images/cat1.png"
+              alt="cozy cat image"
+            />
+          </div>
+          <div class="font-center f-fd-col f-jc-center desktop-mid">
+            <a class="active" href="#"
+              ><h1 class="h1-header">Cozy Cat Bakery</h1></a
+            >
+            <p class="p-it">purrrfect recipes for your sweet tooth cravings</p>
+          </div>
+          <div class="desktop-right">
+            <img
+              class="img-header"
+              src="resources/images/cat2.png"
+              alt="cozy cat image"
+            />
+          </div>
+        </div>
+        <nav>
+          <div id="desktop-nav" class="hidden-on-mobile">
+            <div class="line-header"></div>
+            <div class="f-jc-center f-ai-center gap-3">
+              <a class="active" href="#">home</a>
+              <a href="recipes.html">recipes</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+            </div>
+            <div class="line-header"></div>
+          </div>
+          <div id="mobile-nav" class="hidden-on-desktop">
+            <div>
+              <a class="active" href="#">home</a>
+              <a href="recipes.html">recipes</a>
+              <a href="about.html">about</a>
+              <a href="contact.html">contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="f-fd-col f-ai-center"><div id="loading-circle" class="loader marg"></div></div>
+      <section id="carousel" class="f-fd-col">
+        <h3 id="carousel-title" class="f-jc-center">featured posts</h3>
+        <div class="f-fd-row f-jc-center f-ai-center">
+          <div class="btn-arrow"></div>
+          <div class="rectangle-1"></div>
+          <div class="btn-arrow"></div>
+        </div>
+      </section>
+      <section id="newest-posts" class="f-fd-col f-jc-center f-ai-center">
+        <div id="newest-posts-titles" class="f-fd-row f-ai-center">
+          <h5>newest posts</h5>
+          <a href="#">show more</a>
+        </div>
+        <div class="f-fd-row gap-5">
+          <div class="rectangle-2"></div>
+          <div class="rectangle-2"></div>
+          <div class="rectangle-2"></div>
+        </div>
+      </section>
+      <section
+        id="customer-reviews"
+        class="f-fd-row f-jc-center f-ai-center gap-3"
+      >
+        <div class="customer-reviews-rectangle"></div>
+        <div class="customer-reviews-rectangle"></div>
+        <div class="customer-reviews-rectangle"></div>
+      </section>
+      <section id="featured-on" class="f-fd-col f-jc-center f-ai-center gap-2">
+        <h5>featured on:</h5>
+        <div class="f-fd-row f-jc-center f-ai-center gap-3">
+          <img
+            src="/resources/images/featured-on/delish.png"
+            alt="delish logo"
+          />
+          <img
+            src="/resources/images/featured-on/buzzfeed.png"
+            alt="buzzfeed logo"
+          />
+          <img
+            src="/resources/images/featured-on/hello-magazine.png"
+            alt="hello magazine logo"
+          />
+          <img
+            src="/resources/images/featured-on/britco.png"
+            alt="britco logo"
+          />
+          <img
+            src="/resources/images/featured-on/popsugar.png"
+            alt="popsugar logo"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="f-ai-center">
+      <div class="f-fd-row f-jc-center container gap-10">
+        <div class="f-fd-col gap-1">
+          <h5>explore</h5>
+          <div class="f-fd-col gap-1">
+            <a class="active" href="#">home</a>
+            <a href="recipes.html">recipes</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+          </div>
+        </div>
+        <div class="f-fd-col gap-1">
+          <h5>recipes</h5>
+          <div class="f-fd-col gap-1">
+            <a href="muffins.html">cupcakes</a>
+            <a href="donuts.html">brownies</a>
+            <a href="cookies.html">cookies</a>
+          </div>
+        </div>
+        <div>
+          <h5 class="marg-bot-1">stay updated</h5>
+          <div class="input-subscribe-container">
+            <p>Receive new posts and updates via email</p>
+            <div class="f-fd-col gap-1">
+              <input type="text" placeholder="enter your email" />
+              <input type="submit" value="SUBSCRIBE" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h5 class="marg-bot-1">socials</h5>
+          <div class="f-fd-row">
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-tiktok.svg"
+              alt="tiktok icon"
+            />
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-instagram.svg"
+              alt="instagram icon"
+            />
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-youtube.svg"
+              alt="youtube icon"
+            />
+
+            <img
+              class="socials"
+              src="/resources/images/socials/svg-pinterest.svg"
+              alt="pinterest icon"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

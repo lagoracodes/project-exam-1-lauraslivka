@@ -1,0 +1,40 @@
+footer {
+  height: 250px;
+  padding: 9rem 0 10rem;
+  background-color: #d9d9d9;
+}
+
+footer .container {
+  width: 100%;
+}
+
+footer input {
+  height: 1.7rem;
+  padding: 0.5rem;
+  border: none;
+}
+
+footer .input-subscribe-container p {
+  margin-bottom: 0.5rem;
+}
+
+.input-subscribe-container {
+  width: 20rem;
+  height: 10rem;
+  background-color: var(--pink);
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--yellow);
+}
+
+.socials {
+  height: auto;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
