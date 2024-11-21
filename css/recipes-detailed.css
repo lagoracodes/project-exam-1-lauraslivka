@@ -1,0 +1,106 @@
+#recipes-detailed-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#recipes-detailed-container h1 {
+  font-family: "LondrinaSolid", sans-serif;
+  color: var(--pink);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+#recipes-detailed-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#recipes-detailed-container div {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.recipe-ingredients,
+.recipe-instructions {
+  padding: 10px;
+  border-left: 4px solid var(--pink);
+}
+
+.recipe-ingredients h2,
+.recipe-instructions h2 {
+  font-family: "LondrinaSolid", sans-serif;
+  font-size: 1.8rem;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+
+.recipe-ingredients li,
+.recipe-instructions li {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.recipe-ingredients ul li,
+.recipe-instructions ul li {
+  list-style: disc;
+  margin-bottom: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+#recipes-detailed-container > * + * {
+  margin-top: 20px;
+}
+
+button,
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "InterItalic", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+a.button:hover {
+  background-color: var(--dark-pink);
+}
+
+@media only screen and (max-width: 768px) {
+  #recipes-detailed-container {
+    padding: 15px;
+  }
+
+  #recipes-detailed-container h1 {
+    font-size: 2rem;
+  }
+
+  .recipe-ingredients h2,
+  .recipe-instructions h2 {
+    font-size: 1.5rem;
+  }
+
+  .recipe-ingredients ul li,
+  .recipe-instructions ul li {
+    font-size: 0.95rem;
+  }
+}

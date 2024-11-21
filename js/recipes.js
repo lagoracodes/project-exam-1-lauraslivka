@@ -8,13 +8,13 @@ if (usableData) {
 
   for (const recipe of usableData) {
     const content = recipe.content.rendered;
-    const cookingTimeMatch = content.match(/<p>Cooking time<\/p><p>(.*?)<\/p>/);
+    const cookingTimeMatch = content.match(
+      /<p>Cooking time<\/p>\s*<p>(.*?)<\/p>/
+    );
     const cookingTime = cookingTimeMatch
       ? cookingTimeMatch[1]
       : "Cooking time not available";
-    const imageUrl = recipe._embedded["wp:featuredmedia"]
-      ? recipe._embedded["wp:featuredmedia"][0].source_url
-      : "path_to_default_image.jpg";
+    const imageUrl = recipe._embedded?.["wp:featuredmedia"]?.[0]?.source_url;
     const recipeHTML = `
       <div class="recipe-card">
         <a href="/recipes-detailed.html?id=${recipe.id}">

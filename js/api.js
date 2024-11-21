@@ -1,7 +1,7 @@
 async function fetchWPAPIData() {
   try {
     const response = await fetch(
-      "http://localhost/cozycatbakery/wp-json/wp/v2/posts?_embed"
+      "http://cozycatbakeryapi.online/wp-json/wp/v2/posts?_embed=true"
     );
     if (!response.ok)
       throw new Error("Network response was not ok " + response.statusText);
@@ -16,6 +16,7 @@ async function fetchWPAPIData() {
 
 export const usableData = await fetchWPAPIData()
   .then((data) => {
+    console.log(data);
     return data;
   })
   .catch((error) => {
