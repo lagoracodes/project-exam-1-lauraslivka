@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozy Cat Bakery</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
   </head>
   <body>
     <header class="f-jc-center">
@@ -54,19 +55,29 @@
       </div>
     </header>
     <main>
-      <div class="f-fd-col f-ai-center"><div id="loading-circle" class="loader marg"></div></div>
+      <div class="f-fd-col f-ai-center">
+        <div id="loading-circle" class="loader marg"></div>
+      </div>
       <section id="carousel" class="f-fd-col">
         <h3 id="carousel-title" class="f-jc-center">featured posts</h3>
         <div class="f-fd-row f-jc-center f-ai-center">
-          <div class="btn-arrow"></div>
-          <div class="rectangle-1"></div>
-          <div class="btn-arrow"></div>
+          <img
+            class="btn-arrow mirror"
+            src="/resources/images/icons/right-arrow.svg"
+            alt="arrow icon"
+          />
+          <div class="carousel-container"></div>
+          <img
+            class="btn-arrow"
+            src="/resources/images/icons/right-arrow.svg"
+            alt="arrow icon"
+          />
         </div>
       </section>
       <section id="newest-posts" class="f-fd-col f-jc-center f-ai-center">
         <div id="newest-posts-titles" class="f-fd-row f-ai-center">
           <h5>newest posts</h5>
-          <a href="#">show more</a>
+          <a href="/recipes.html">show more</a>
         </div>
         <div class="f-fd-row gap-5">
           <div class="rectangle-2"></div>
@@ -166,5 +177,6 @@
       </div>
     </footer>
     <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/homepage.js"></script>
   </body>
 </html>
