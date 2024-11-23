@@ -1,7 +1,7 @@
 export async function fetchUsableData() {
   try {
     const response = await fetch(
-      "http://cozycatbakeryapi.online/wp-json/wp/v2/posts?_embed=true"
+      "https://cozycatbakeryapi.online/wp-json/wp/v2/posts?_embed=true"
     );
     if (!response.ok)
       throw new Error("Network response was not ok " + response.statusText);
