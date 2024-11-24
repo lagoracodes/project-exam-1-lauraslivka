@@ -1,7 +1,8 @@
-import { usableData } from "./api.js";
+import { fetchUsableData } from "./api.js";
 
 const recipeGrid = document.getElementById("recipe-grid");
 const loadingCircle = document.querySelector("#loading-circle");
+const usableData = await fetchUsableData();
 
 if (usableData) {
   loadingCircle.remove();
