@@ -5,13 +5,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const usableData = await fetchUsableData();
 
+  // FEATURED POSTS
   if (!usableData) {
     console.error("usableData is not available");
     return;
   }
-  const carouselContainer = document.querySelector(
-    "#carousel .carousel-container"
-  );
+  const carouselContainer = document.querySelector(".carousel-container");
   const leftArrow = document.querySelector(".btn-arrow.mirror");
   const rightArrow = document.querySelector(".btn-arrow:not(.mirror)");
 
@@ -45,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <div class="carousel-item">
           <a href="/recipes-detailed.html?id=${post.id}">
             <img src="${imageUrl}" alt="${post.title.rendered}" />
-            <h3>${post.title.rendered}</h3>
+            <h4>${post.title.rendered}</h4>
           </a>
         </div>
       `;
@@ -66,5 +65,45 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   } catch (error) {
     carouselContainer.innerHTML = "<p>Error loading featured posts.</p>";
+  }
+
+  // NEWEST POSTS
+  const newestPostsSection = document.querySelector("#newest-posts");
+
+  try {
+    const newestPosts = usableData.slice(0, 3);
+
+    const renderNewestPostsSection = () => {
+      const titleHTML = `
+        <div id="newest-posts-titles" class="f-fd-row f-ai-center">
+          <h5>newest posts</h5>
+          <a href="/recipes.html">show more</a>
+        </div>
+      `;
+
+      const postsHTML = newestPosts
+        .map((post) => {
+          const imageUrl =
+            post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
+          return `
+            <div class="newest-post-item">
+              <a href="/recipes-detailed.html?id=${post.id}">
+                <img src="${imageUrl}" alt="${post.title.rendered}" />
+                <h4>${post.title.rendered}</h4>
+              </a>
+            </div>
+          `;
+        })
+        .join("");
+
+      newestPostsSection.innerHTML =
+        titleHTML + `<div class="f-fd-row">${postsHTML}</div>`;
+    };
+
+    renderNewestPostsSection();
+    loadingCircle.remove();
+  } catch (error) {
+    newestPostsSection.innerHTML = "<p>Error loading newest posts.</p>";
+    loadingCircle.remove();
   }
 });
