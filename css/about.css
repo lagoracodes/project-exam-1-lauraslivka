@@ -1,0 +1,19 @@
+#about {
+  margin: 2rem 0 7rem;
+  width: 60rem;
+}
+
+#about img {
+  width: 37%;
+  height: auto;
+  border: 10px solid #b5a89e;
+  margin: 2rem 0 5rem;
+}
+
+#about p {
+  padding: 2rem 1rem 0 3rem;
+  font-size: 14px;
+  font-style: italic;
+  text-align: justify;
+  letter-spacing: 1px;
+}
