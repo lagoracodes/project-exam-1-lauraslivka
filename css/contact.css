@@ -1,0 +1,63 @@
+#contact-con {
+  margin: 2rem 0 7rem;
+  width: 60rem;
+}
+
+#contact {
+  padding: 1rem;
+  background-color: rgba(166, 153, 247, 10%);
+}
+
+#contact.gap {
+  gap: 14rem;
+}
+
+#contact h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.025rem;
+  margin-bottom: 0.5rem;
+}
+
+#contact p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.025rem;
+}
+
+#contact-con .dotted-line {
+  margin-bottom: 2rem;
+}
+
+#contact-form-con .contact-form {
+  width: 20rem;
+  height: 1.55rem;
+  border-radius: 5px;
+}
+
+#contact-form-con .msg {
+  height: 5rem;
+}
+
+#contact-form-con .gap {
+  gap: 0.5rem;
+}
+
+input {
+  margin-right: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact-con section {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+
+  #contact-con section.gap {
+    gap: 4rem;
+  }
+
+  #contact-form-con {
+    margin-bottom: 2rem;
+  }
+}
